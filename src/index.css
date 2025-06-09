@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+
+body{
+  background-color: #000000;
+}
+
+::-webkit-scrollbar{
+    width: 7px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #000000;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#6556cd;
+}
+
+/* Dropdown container */
+.dropdown-container {
+  display: inline-block;
+}
+
+/* Custom select wrapper */
+.custom-select {
+  position: relative;
+  width: 190px;
+}
+
+/* Styling the select element */
+.custom-select select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 14px;
+  border: 2px solid #444;
+  border-radius: 6px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover and focus effects */
+.custom-select select:hover,
+.custom-select select:focus {
+  border-color:#6556CD;
+  background-color: #444;
+}
+
+/* Custom arrow */
+.custom-arrow {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid white;
+  pointer-events: none;
+}
+
+/* Disabled option styling */
+.custom-select select option[disabled] {
+  color: #777;
+}
+
+/* Options styling */
+.custom-select select option {
+  background-color: #333333;
+  color: white;
+}
+
+/* Hover effect for options */
+.custom-select select option:hover {
+  background-color: #6556CD;
+}
