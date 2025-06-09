@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import Home from './Components/Home.Jsx'
+import Home from './Components/Home'
 import Trending from './Components/Trending'
 import Popular from './Components/Popular'
 import About from './Components/About'
